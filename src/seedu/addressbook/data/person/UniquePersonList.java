@@ -83,6 +83,13 @@ public class UniquePersonList implements Iterable<Person> {
 
 
     /**
+     * Returns the count of the list.
+     */
+    public int count() {
+        return internalList.size();
+    }
+
+    /**
      * Checks if the list contains an equivalent person as the given argument.
      * The {@link ReadOnlyPerson#isSamePerson} method is used for this comparison, which
      * defines a weaker notion of equality.
